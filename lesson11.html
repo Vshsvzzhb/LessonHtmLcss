@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>
+        lesson 11a
+</h1>
+
+<div class="container">
+    <div class="box blue">200px</div>
+    <div class="box pink">75px</div>
+</div>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 200px 75px;
+        width: 300px;
+        margin: 9px;
+    }
+
+    .box {
+        padding: 9;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .blue {
+        background-color: lightblue;
+    }
+
+    .pink {
+        background-color: pink;
+    }
+</style>
+<h1>
+        Lesson 11b
+</h1>
+
+<div class="boxcontainer">
+    <div class="kotak biru">col1</div>
+    <div class="kotak merahmuda">col2</div>
+    <div class="kotak biru">col3</div>
+</div>
+<style>
+    .boxcontainer {
+        display: grid;
+        grid-template-columns: 50px auto 50px;
+        width: 40%;
+        margin: 20px;
+    }
+
+    .kotak {
+        padding: 50;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .biru {
+        background-color: lightblue;
+    }
+    .merahmuda {
+        background-color: pink;
+    }
+</style>
+<h1>
+        Lesson 11c
+</h1>
+
+ <div class="grid-container">
+    <div class="grid-item">col1</div>
+    <div class="grid-item">col2</div>
+    <div class="grid-item">col3</div>
+    <div class="grid-item">col4</div>
+    <div class="grid-item">col1</div>
+    <div class="grid-item">col2</div>
+    <div class="grid-item">col3</div>
+    <div class="grid-item">col4</div>
+ </div>
+
+ <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px 10px;
+        width: 40%;
+    }
+
+    .grid-item {
+        background-color: pink;
+        padding: 10px;
+        text-align: center;
+    }
+ </style>
+
+ <h1>
+        Lesson 11d
+ </h1>
+ <div class="container">
+    <div class="card">
+        <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Oliver">
+        <p>Oliver</p>
+        <div class="mutual-friends">
+            <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Mutual Friend">
+            <p>2 mutual friends</p>
+        </div>
+        <button>Add Friend</button>
+    </div>
+
+    <div class="card">
+        <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Mimi">
+        <p>Mimi</p>
+        <div class="mutual-friends">
+            <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Mutual Friend">
+            <p>3 mutual friends</p>
+        </div>
+        <button>Add Friend</button>
+    </div>
+
+    <div class="card">
+        <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Rex">
+        <p>Rex</p>
+        <div class="mutual-friends">
+            <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Mutual Friend">
+            <p>4 mutual friends</p>
+        </div>
+        <button>Add Friend</button>
+    </div>
+</div>
+
+<style>
+    .container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    width: 200px;
+    color: black;
+    font-family: arial;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    object-fit: cover;
+    display: flex;
+    margin: 0 auto 10px;
+}
+
+.mutual-friends {
+    display: flex;
+    align-items:
+    font
+}
+
+.mutual-friends img {
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+button:hover {
+    background: darkblue;
+}
+</style>
+</body>
+</html>

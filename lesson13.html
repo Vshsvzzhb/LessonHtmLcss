@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson13</title>
+</head>
+<body>
+    <h1>
+            Lesson 13a
+    </h1>
+
+<div class="abdul">
+    <div class="hytam">item1</div>
+    <div class="hytam2"></div>
+</div>
+
+<style>
+    .abdul {
+        display: flex;
+        width: 300px;
+    }
+
+    .hytam {
+        width: 200px;
+        height: 50px;
+        background-color: pink;
+        text-align:center;
+        font-weight: bolder;
+        justify-content: center;
+        font-family: arial;
+    }
+
+    .hytam2 {
+        width: 100px;
+        background-color: lightblue;
+    }
+</style>
+
+<h1>
+        Lesson 13b
+</h1>
+<div class="content">
+    <div class="kotak">
+        <div class="nested-box"></div>
+        <div class="row-container">
+            <div class="row">row1</div>
+            <div class="row">row2</div>
+            <div class="row">row3</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .kotak {
+            display: flex;
+            width: 300px;
+            height: 100px;
+            border: 3px solid white;
+            background-color: white;
+        }
+
+        .nested-box {
+            display: flex;
+            background-color: pink;
+            width: 200px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+    
+        }
+
+        .row-container {
+            background-color: lightblue;
+            width: 190px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .row {
+            font-weight: bold;
+            background-color: transparent;
+            padding: 5px;
+            margin: 2px 0;
+        }
+</style>
+<h1>
+        Lesson 13c
+</h1>
+<div class="container">
+    <div class="header">ALL INBOXES</div>
+    <div class="box">
+        <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" class="profile-pic" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 1px; align-items:f;">
+        <div class="content">
+            <div class="title">Chewy Promotions<br>Biggest sales of the year!<br><span style="font-size: 12px; color: gray; ">Hey there! We're writing to tell you about our...</span></div>
+        </div>
+        <div class="timestamp">4:58 PM</div>
+    </div>
+</div>
+<style>
+        .container {
+            display: block;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            height: 200pxpx;
+        }
+
+        .header {
+            color: gray;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        
+        .timestamp {
+            display: block;
+            font-size: 12px;
+            color: gray;
+            justify-items: center;
+        }
+</style>
+
+<h1>
+        Lesson 13d 13e
+</h1>
+<div class="aw">
+    <div class="header">ALL INBOXES</div>
+    <div class="boxkotak">
+        <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" class="consume" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 1px; align-items:f;">
+        <div class="content">
+            <div class="title">Chewy Promotions<br>Biggest sales of the year!<br><span style="font-size: 12px; color: gray; ">Hey there! We're writing to tell you about our...</span></div>
+        </div>
+        <div class="timestamp">4:58 PM</div><br>
+    </div>
+        <div class="boxkotak">
+            <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" class="consume" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 1px; align-items:f;">
+            <div class="content">
+                <div class="title">Chewy Promotions<br>Biggest sales of the year!<br><span style="font-size: 12px; color: gray; ">Hey there! We're writing to tell you about our...</span></div>
+            </div>
+            <div class="timestamp">4:58 PM</div>
+        </div>
+            <div class="boxkotak">
+                <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" class="consume" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 1px; align-items:f;">
+                <div class="content">
+                    <div class="title">Chewy Promotions<br>Biggest sales of the year!<br><span style="font-size: 12px; color: gray; ">Hey there! We're writing to tell you about our...</span></div>
+                </div>
+                <div class="timestamp">4:58 PM</div>
+            </div>
+                
+<style>
+    .aw {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            height: 222px;
+            
+        }
+
+        .header {
+            color: gray;
+            font-size: 12px;
+        }
+
+        .boxkotak {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .consume {
+            width: px;
+            height: 50px;
+            border-radius: 50%;
+            display:    flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        
+        .timestamp {
+            display: block;
+            font-size: 12px;
+            color: gray;
+            justify-self: auto;
+        }
+</style>
+<h1>
+        Lesson 13f
+</h1>
+
+<div class="twitter-post">
+    <div class="profile-picture-container">
+        <img class="profile-picture" src="https://picsum.photos/50" alt="Profile picture">
+    </div>
+    
+    <div class="post-content">
+        <div class="post-header">
+            <span class="username">supersimple.dev</span>
+            <span class="user-handle">@SuperSimpleDev</span>
+        </div>
+        
+        <div class="post-text">
+            What is backend web development? A complete overview. New video is up!
+        </div>
+        
+        <div class="post-link">
+            <div class="link-preview">
+                <div class="link-image"></div>
+                <div class="link-text">
+                    <div class="link-url">youtube.com</div>
+                    <div class="link-title">Backend web development - a complete overview (2021)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .twitter-post {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-picture-container {
+    margin-right: 15px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-header {
+    margin-bottom: 5px;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.user-handle {
+    color: #657786;
+}
+
+.post-text {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: arial, sans-serif;
+}
+
+.post-link {
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.link-preview {
+    display: flex
+}
+
+.link-image {
+    width: 120px;
+    background-color: #e1e8ed;
+    background-image: url('https://picsum.photos/120/80');
+    background-size: cover;
+    background-position: center;
+}
+
+.link-text {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-url {
+    color: #657786;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.link-title {
+    font-weight: bold;
+}
+</style>
+</body>
+</html>
