@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lesson 16</h1>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .header-icons img {
+      width: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .video-card {
+      background-color: white;
+      padding: 10px;
+      width: 350px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .thumbnail {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .title {
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-icons">
+    <img src="home.png" title="Home">
+    <img src="search.png" title="Search">
+    <img src="profile.png" title="Your Profile">
+  </div><br>
+  <div class="video-card">
+    <a href="https://youtu.be/Yjt0nlxZP5w?si=cku3qRPK2XmnCAc8" target="_blank">
+      <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Video Thumbnail" class="thumbnail">
+    </a>
+
+    <div class="info">
+      <a href="https://www.youtube.com/@channel" target="_blank">
+        <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Channel Profile" class="profile">
+      </a>
+      <a href="https://youtu.be/Yjt0nlxZP5w?si=cku3qRPK2XmnCAc8" target="_blank">
+        <div class="title">Talking Tech and AI with Google CEO Sundar Pichai</div>
+      </a>
+    </div>
+  </div>
+<h1> Lesoon 16 challenges</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 16d Tooltip</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="video-card">
+    <img class="thumbnail" src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Video Thumbnail">
+
+    <div class="channel-info">
+      <div class="channel-pic-wrapper">
+        <img class="channel-pic" src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" alt="Markiplier" />
+        <div class="tooltip">
+          <img src="markus-spiske-8OyKWQgBsKQ-unsplash.jpg" class="tooltip-pic" alt="Markiplier" />
+          <div class="tooltip-text">
+            <strong>Markiplier</strong><br />
+            30M subscribers
+          </div>
+        </div>
+      </div>
+      <div class="video-text">
+        <strong>Try Not To Laugh Challenge #9</strong><br />
+        Markiplier
+      </div>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+.video-card {
+  width: 500px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.channel-pic-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.channel-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 200px;
+  display: flex;
+  gap: 10px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tooltip-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.tooltip-text {
+  font-size: 14px;
+}
+
+
+.channel-pic-wrapper:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+    </style>
+</body>
+</html>
